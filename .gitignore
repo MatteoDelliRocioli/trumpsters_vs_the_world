@@ -1,3 +1,5 @@
+.envrc
+NewsManager/MyConfig.json
 BACKUPS/*
 ComedySite/bin/*
 ComedySite/obj/*
