@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using trumpsters_vs_the_world.Models;
+using ComedySite.Models;
 
-namespace trumpsters_vs_the_world.Controllers
+namespace ComedySite.Controllers
 {
     public class HomeController : Controller
     {

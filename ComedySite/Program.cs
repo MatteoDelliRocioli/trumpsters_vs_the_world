@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace trumpsters_vs_the_world
+namespace ComedySite
 {
     public class Program
     {

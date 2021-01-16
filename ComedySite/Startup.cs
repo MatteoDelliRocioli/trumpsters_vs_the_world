@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace trumpsters_vs_the_world
+namespace ComedySite
 {
     public class Startup
     {

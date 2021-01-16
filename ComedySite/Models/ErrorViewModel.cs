@@ -1,6 +1,6 @@
 using System;
 
-namespace trumpsters_vs_the_world.Models
+namespace ComedySite.Models
 {
     public class ErrorViewModel
     {
