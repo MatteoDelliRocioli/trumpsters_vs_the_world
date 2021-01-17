@@ -3,9 +3,40 @@
 @model NewsResult
 
 @{
-	ViewData["Title"] = "News";
+	ViewData["Title"] = "Last News";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>status: @Model.Status </p>
-<p>id: @Model.TotalResults </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Are you a Trumpster? Then those are fake news</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" />
+	<link rel="stylesheet" href="~/css/lastNews.css" />
+</head>
+<body>
+	<h1>@ViewData["Title"]</h1>
+
+	<p>Total of articles: @Model.Articles.Count </p>
+
+	@foreach (var article in @Model.Articles)
+	{
+		<a href="@article.Url" target="_blank">
+			<div class="parent polaroid">
+				<div class="article-img">
+					<img src="@article.UrlToImage" alt="@article.Title" class="news" />
+				</div>
+				<div class="article-infos">
+					<p>Source: @article.Source.Name</p>
+					<p>Author: @article.Author</p>
+					<p>Title: @article.Title</p>
+					<p>Description: @article.Description</p>
+					<p>Publish date: @article.PublishedAt</p>
+				</div>
+			</div>
+		</a>
+	}
+</body>
+</html>
