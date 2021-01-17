@@ -21,6 +21,22 @@ div.parent {
 	-webkit-align-items: center;
 }
 
+div.parent-no-hover {
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	align-items: center;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	background: #c1cbe0;
+	border-radius: 4px;
+	padding: 7px;
+	margin: 7px;
+}
+
 div.article-img {
 	width: 35%;
 	border-radius: 12px;
@@ -29,6 +45,30 @@ div.article-img {
 div.article-infos {
 	width: 65%;
 	border-radius: 12px;
+}
+
+div.infos-subject {
+	width: 20%;
+	background: #a5b9e4a3;
+	text-align: center;
+	border-radius: 4px;
+}
+
+div.infos-subject p {
+	margin: auto;
+}
+
+div.infos-content {
+	width: 80%;
+	background: #b9c6e2a3;
+	text-align: center;
+	border-radius: 4px;
+}
+
+div.infos-content p {
+	margin: auto;
+	text-align: initial;
+	padding-left: 10px;
 }
 
 div.polaroid{

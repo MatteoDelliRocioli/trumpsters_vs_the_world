@@ -29,11 +29,32 @@
 					<img src="@article.UrlToImage" alt="@article.Title" class="news" />
 				</div>
 				<div class="article-infos">
-					<p>Source: @article.Source.Name</p>
-					<p>Author: @article.Author</p>
-					<p>Title: @article.Title</p>
-					<p>Description: @article.Description</p>
-					<p>Publish date: @article.PublishedAt</p>
+
+					<div class="parent-no-hover">
+						<div class="infos-subject"><p>Source:</p></div>
+						<div class="infos-content"><p>@article.Source.Name</p></div>
+					</div>
+
+					<div class="parent-no-hover">
+						<div class="infos-subject"><p>Author:</p></div>
+						<div class="infos-content"><p>@article.Author</p></div>
+					</div>
+
+					<div class="parent-no-hover">
+						<div class="infos-subject"><p>Title:</p></div>
+						<div class="infos-content"><p>@article.Title</p></div>
+					</div>
+
+					<div class="parent-no-hover">
+						<div class="infos-subject"><p>Description:</p></div>
+						<div class="infos-content"><p>@article.Description</p></div>
+					</div>
+
+					<div class="parent-no-hover">
+						<div class="infos-subject"><p>Publish date:</p></div>
+						<div class="infos-content"><p>@article.PublishedAt</p></div>
+					</div>
+
 				</div>
 			</div>
 		</a>
