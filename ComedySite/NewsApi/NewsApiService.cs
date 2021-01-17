@@ -16,10 +16,6 @@ namespace ComedySite.NewsApi
 
 		public NewsApiService(HttpClient client)
 		{
-			client.BaseAddress = new Uri("http://newsapi.org/v2/everything?q=Trump");
-			// GitHub API versioning
-			client.DefaultRequestHeaders.Add("x-api-key","<TODO:use config file>");
-
 			Client = client;
 		}
 
@@ -29,18 +25,21 @@ namespace ComedySite.NewsApi
 
 			response.EnsureSuccessStatusCode();
 
-			// using var responseStream = await response.Content.ReadAsStreamAsync();
-
-			// return await JsonSerializer.DeserializeAsync
-			// 	<IEnumerable<NewsResult>>(responseStream);
-
-			var test = await response.Content.ReadAsStringAsync();
-
-			Console.WriteLine(value: $"risultato: {test}");
-
 			var myJsonResponse = await response.Content.ReadAsStreamAsync();
 
 			return await JsonSerializer.DeserializeAsync<NewsResult>(myJsonResponse);
+		}
+
+		public void SetClientBaseAddress(string baseAddress)
+		{
+			Client.BaseAddress = new Uri(baseAddress);
+		}
+		public void SetRequestHeaders(Dictionary<string, string> headers)
+		{
+			foreach (var header in headers)
+			{
+				Client.DefaultRequestHeaders.Add(header.Key, header.Value);
+			}
 		}
 	}
 }

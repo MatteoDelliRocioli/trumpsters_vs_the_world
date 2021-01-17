@@ -1,0 +1,8 @@
+{
+	"newsApi":
+	{
+			"baseHost": "<newsApi http Host>",
+			"trumpQueryHost": "<newsApi http Host with url query>",
+			"xApiKey": "<your key, get one here -> https://newsapi.org>"
+	}
+}

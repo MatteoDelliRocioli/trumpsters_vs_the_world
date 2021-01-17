@@ -4,11 +4,6 @@ using System.Text.Json.Serialization;
 
 namespace ComedySite.NewsApi
 {
-	/// <summary>
-	/// A partial representation of an news object from the NewsAPI
-	/// </summary>
-
-	// Root myDeserializedClass = JsonSerializer.Deserialize<Root>(myJsonResponse);
 	public class Source	{
 		[JsonPropertyName("id")]
 		public string Id { get; set; }
@@ -43,6 +38,9 @@ namespace ComedySite.NewsApi
 		public string Content { get; set; }
 	}
 
+	/// <summary>
+	/// DTO representing a json result from the NewsAPI
+	/// </summary>
 	public class NewsResult	{
 		[JsonPropertyName("status")]
 		public string Status { get; set; }
@@ -53,6 +51,5 @@ namespace ComedySite.NewsApi
 		[JsonPropertyName("articles")]
 		public List<Article> Articles { get; set; }
 	}
-
 
 }
