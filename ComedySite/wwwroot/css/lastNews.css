@@ -1,0 +1,83 @@
+img.news {
+	width: 90%;
+	display: block;
+	margin: auto;
+    border-radius: 12px;
+}
+
+.parent:hover{
+	box-shadow: 0 0 20px 5px rgba(3, 102, 204, 0.5);
+}
+
+div.parent {
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	align-items: center;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+}
+
+div.parent-no-hover {
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	align-items: center;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	background: #c1cbe0;
+	border-radius: 4px;
+	padding: 7px;
+	margin: 7px;
+}
+
+div.article-img {
+	width: 35%;
+	border-radius: 12px;
+}
+
+div.article-infos {
+	width: 65%;
+	border-radius: 12px;
+}
+
+div.infos-subject {
+	width: 20%;
+	background: #a5b9e4a3;
+	text-align: center;
+	border-radius: 4px;
+}
+
+div.infos-subject p {
+	margin: auto;
+}
+
+div.infos-content {
+	width: 80%;
+	background: #b9c6e2a3;
+	text-align: center;
+	border-radius: 4px;
+}
+
+div.infos-content p {
+	margin: auto;
+	text-align: initial;
+	padding-left: 10px;
+}
+
+div.polaroid{
+	background-color: #001b4b2e;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0 0 0 / 32%);
+	margin-bottom: 25px;
+	border-radius: 12px;
+}
+
+div.polaroid p {
+	color: #25292e;
+}

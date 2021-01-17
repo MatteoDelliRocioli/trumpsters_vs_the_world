@@ -1,0 +1,8 @@
+.envrc
+NewsManager/MyConfig.json
+ComedySite/MyConfig.json
+BACKUPS/*
+ComedySite/bin/*
+ComedySite/obj/*
+NewsManager/bin/*
+NewsManager/obj/*
