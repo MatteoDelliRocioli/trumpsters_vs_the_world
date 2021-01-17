@@ -1,0 +1,11 @@
+@using ComedySite.NewsApi;
+
+@model NewsResult
+
+@{
+    ViewData["Title"] = "News";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>status: @Model.Status </p>
+<p>id: @Model.TotalResults </p>
